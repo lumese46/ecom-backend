@@ -6,7 +6,7 @@ logging:
 
 spring:
   application:
-    name: backend
+    name: Ecommerce Backend
   threads:
     virtual:
       enabled: true
@@ -34,7 +34,7 @@ spring:
         connection:
           provider_disables_autocommit: true
         order_inserts: true
-        default_schema: liquibase_db
+        default_schema: public
     hibernate:
       ddl-auto: validate
       naming:
@@ -43,7 +43,7 @@ spring:
     open-in-view: false
   liquibase:
     change-log: classpath:db/changelog/master.xml
-    default-schema: liquibase_db
+    default-schema: public
     contexts: dev
   #    drop-first: true
   security:
