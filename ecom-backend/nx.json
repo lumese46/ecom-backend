@@ -1,0 +1,28 @@
+{
+  "installation": {
+    "version": "21.2.2",
+    "plugins": {
+      "@nxrocks/nx-spring-boot": "11.0.1"
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "plugins": [
+    {
+      "plugin": "@nxrocks/nx-spring-boot",
+      "options": {
+        "buildTargetName": "build",
+        "installTargetName": "install",
+        "testTargetName": "test",
+        "cleanTargetName": "clean",
+        "formatTargetName": "format",
+        "applyFormatTargetName": "apply-format",
+        "checkFormatTargetName": "check-format",
+        "runTargetName": "run",
+        "serveTargetName": "serve",
+        "buildImageTargetName": "build-image",
+        "buildInfoTargetName": "build-info"
+      }
+    }
+  ],
+  "targetDefaults": {}
+}
